@@ -3,11 +3,17 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
-type Dummy {
-  id: String!
-  message: String!
+type Driver {
+  code: String
+  dateOfBirth: String!
+  driverId: String!
+  familyName: String!
+  givenName: String!
+  nationality: String!
+  permanentNumber: String
+  url: String!
 }
 
 type Query {
-  hello: Dummy!
+  drivers(driverId: String, year: String): [Driver!]!
 }

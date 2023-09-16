@@ -2,11 +2,11 @@ import { ApolloServer } from 'apollo-server';
 import path from 'path';
 import 'reflect-metadata';
 import { buildSchema } from 'type-graphql';
-import { DummyResolver } from './resolvers/dummy-resolver';
+import { DriversResolver } from './resolvers/drivers-resolver';
 
 async function bootstrap() {
   const schema = await buildSchema({
-    resolvers: [DummyResolver],
+    resolvers: [DriversResolver],
     emitSchemaFile: path.resolve(__dirname, 'schema.gql'),
   });
   const server = new ApolloServer({
