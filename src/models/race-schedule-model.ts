@@ -63,7 +63,7 @@ export class Race {
   raceName: string;
 
   @Field(() => Circuit, { nullable: true })
-  circuit: Circuit;
+  circuit?: Circuit;
 
   @Field()
   date: string;
@@ -72,16 +72,16 @@ export class Race {
   time: string;
 
   @Field(() => FirstPractice, { nullable: true })
-  firstPractice: FirstPractice;
+  firstPractice?: FirstPractice;
 
   @Field(() => FirstPractice, { nullable: true })
-  secondPractice: FirstPractice;
+  secondPractice?: FirstPractice;
 
   @Field(() => FirstPractice, { nullable: true })
   thirdPractice?: FirstPractice;
 
   @Field(() => FirstPractice, { nullable: true })
-  qualifying: FirstPractice;
+  qualifying?: FirstPractice;
 
   @Field(() => FirstPractice, { nullable: true })
   sprint?: FirstPractice;

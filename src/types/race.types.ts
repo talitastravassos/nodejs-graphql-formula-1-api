@@ -9,7 +9,7 @@ export interface Race {
   url: string;
   raceName: string;
   Circuit: Circuit;
-  date: Date;
+  date: string;
   time: string;
   FirstPractice: FirstPractice;
   SecondPractice: FirstPractice;
@@ -33,6 +33,6 @@ export interface Location {
 }
 
 export interface FirstPractice {
-  date: Date;
+  date: string;
   time: string;
 }
