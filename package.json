@@ -10,7 +10,7 @@
     "npm": ">=8.18"
   },
   "scripts": {
-    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored && vercel --prod",
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "start": "node dist/server.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --no-notify src/server.ts",
     "test": "jest --coverage"
