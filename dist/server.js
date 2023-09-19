@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const apollo_server_1 = require("apollo-server");
+require("module-alias/register");
 const path_1 = __importDefault(require("path"));
 require("reflect-metadata");
 const type_graphql_1 = require("type-graphql");

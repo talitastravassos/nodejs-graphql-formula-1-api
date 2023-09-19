@@ -1,4 +1,5 @@
 import { ApolloServer } from 'apollo-server';
+import 'module-alias/register';
 import path from 'path';
 import 'reflect-metadata';
 import { buildSchema } from 'type-graphql';
