@@ -13,4 +13,3 @@ A boilerplate for node-express projects with GraphQL and Typescript
 - Eslint
 - Prettier
 - Jest
-- Babel
