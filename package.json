@@ -5,6 +5,10 @@
   "main": "server.ts",
   "author": "talitastravassos <talitatravassos.tt@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=16.18",
+    "npm": ">=8.18"
+  },
   "scripts": {
     "build": "tsc",
     "ts.check": "tsc --project tsconfig.json",
