@@ -25,11 +25,5 @@
   "ts-node": {
     "require": ["tsconfig-paths/register"]
   },
-  "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "src/**/*.test.ts",
-    "src/**/*.mocks.ts",
-    "src/__mocks__"
-  ]
+  "include": ["src/**/*"]
 }

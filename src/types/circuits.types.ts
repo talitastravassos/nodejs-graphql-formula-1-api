@@ -1,8 +1,4 @@
 export interface Circuits {
-  CircuitTable: CircuitTable;
-}
-
-export interface CircuitTable {
   season: string;
   Circuits: ICircuit[];
 }
@@ -11,7 +7,7 @@ export interface ICircuit {
   circuitId: string;
   url: string;
   circuitName: string;
-  Location: Location;
+  location: Location | null;
 }
 
 export interface ILocation {
