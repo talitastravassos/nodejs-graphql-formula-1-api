@@ -17,12 +17,9 @@
     "baseUrl": ".",
     "paths": {
       "@services/*": ["./src/services/*"],
-      "@controllers/*": ["./src/controllers/*"],
       "@models/*": ["./src/models/*"],
-      "@views/*": ["./src/views/*"],
-      "@config/*": ["./src/config/*"],
-      "@types/*": ["./src/types/*"],
-      "@routes/*": ["./src/routes/*"]
+      "@resolvers/*": ["./src/resolvers/*"],
+      "@types/*": ["./src/types/*"]
     }
   },
   "ts-node": {

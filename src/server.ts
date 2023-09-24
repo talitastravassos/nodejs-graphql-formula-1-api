@@ -3,18 +3,16 @@ import 'module-alias/register';
 import path from 'path';
 import 'reflect-metadata';
 import { buildSchema } from 'type-graphql';
-import { DriversResolver } from './resolvers/drivers-resolver';
-import { RaceSchedulesResolver } from './resolvers/race-schedules-resolver';
+import { resolvers } from './resolvers';
 
 async function bootstrap() {
   const schema = await buildSchema({
-    resolvers: [DriversResolver, RaceSchedulesResolver],
+    resolvers: [...resolvers],
     emitSchemaFile: path.resolve(__dirname, 'schema.gql'),
   });
   const server = new ApolloServer({
     schema,
     introspection: true,
-    playground: true,
   });
 
   const { url } = await server.listen();

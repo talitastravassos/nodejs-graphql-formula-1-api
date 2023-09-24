@@ -1,3 +1,5 @@
+import { type ICircuit } from './circuits.types';
+
 export interface RaceSchedules {
   season: string;
   Races: Race[];
@@ -8,7 +10,7 @@ export interface Race {
   round: string;
   url: string;
   raceName: string;
-  Circuit: Circuit;
+  Circuit: ICircuit;
   date: string;
   time: string;
   FirstPractice: FirstPractice;
@@ -16,20 +18,6 @@ export interface Race {
   ThirdPractice?: FirstPractice;
   Qualifying: FirstPractice;
   Sprint?: FirstPractice;
-}
-
-export interface Circuit {
-  circuitId: string;
-  url: string;
-  circuitName: string;
-  Location: Location;
-}
-
-export interface Location {
-  lat: string;
-  long: string;
-  locality: string;
-  country: string;
 }
 
 export interface FirstPractice {

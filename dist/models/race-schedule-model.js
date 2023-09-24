@@ -9,8 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Race = exports.FirstPractice = exports.Circuit = exports.Location = exports.RaceSchedules = void 0;
+exports.Race = exports.FirstPractice = exports.RaceSchedules = void 0;
 const type_graphql_1 = require("type-graphql");
+const circuits_model_1 = require("./circuits-model");
 let RaceSchedules = class RaceSchedules {
 };
 exports.RaceSchedules = RaceSchedules;
@@ -25,50 +26,6 @@ __decorate([
 exports.RaceSchedules = RaceSchedules = __decorate([
     (0, type_graphql_1.ObjectType)()
 ], RaceSchedules);
-let Location = class Location {
-};
-exports.Location = Location;
-__decorate([
-    (0, type_graphql_1.Field)(),
-    __metadata("design:type", String)
-], Location.prototype, "lat", void 0);
-__decorate([
-    (0, type_graphql_1.Field)(),
-    __metadata("design:type", String)
-], Location.prototype, "long", void 0);
-__decorate([
-    (0, type_graphql_1.Field)(),
-    __metadata("design:type", String)
-], Location.prototype, "locality", void 0);
-__decorate([
-    (0, type_graphql_1.Field)(),
-    __metadata("design:type", String)
-], Location.prototype, "country", void 0);
-exports.Location = Location = __decorate([
-    (0, type_graphql_1.ObjectType)()
-], Location);
-let Circuit = class Circuit {
-};
-exports.Circuit = Circuit;
-__decorate([
-    (0, type_graphql_1.Field)(),
-    __metadata("design:type", String)
-], Circuit.prototype, "circuitId", void 0);
-__decorate([
-    (0, type_graphql_1.Field)(),
-    __metadata("design:type", String)
-], Circuit.prototype, "url", void 0);
-__decorate([
-    (0, type_graphql_1.Field)(),
-    __metadata("design:type", String)
-], Circuit.prototype, "circuitName", void 0);
-__decorate([
-    (0, type_graphql_1.Field)(() => Location),
-    __metadata("design:type", Location)
-], Circuit.prototype, "location", void 0);
-exports.Circuit = Circuit = __decorate([
-    (0, type_graphql_1.ObjectType)()
-], Circuit);
 let FirstPractice = class FirstPractice {
 };
 exports.FirstPractice = FirstPractice;
@@ -103,8 +60,8 @@ __decorate([
     __metadata("design:type", String)
 ], Race.prototype, "raceName", void 0);
 __decorate([
-    (0, type_graphql_1.Field)(() => Circuit, { nullable: true }),
-    __metadata("design:type", Circuit)
+    (0, type_graphql_1.Field)(() => circuits_model_1.Circuit, { nullable: true }),
+    __metadata("design:type", circuits_model_1.Circuit)
 ], Race.prototype, "circuit", void 0);
 __decorate([
     (0, type_graphql_1.Field)(),

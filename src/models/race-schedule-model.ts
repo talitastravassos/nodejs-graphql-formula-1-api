@@ -1,4 +1,5 @@
 import { Field, ObjectType } from 'type-graphql';
+import { Circuit } from './circuits-model';
 
 @ObjectType()
 export class RaceSchedules {
@@ -7,36 +8,6 @@ export class RaceSchedules {
 
   @Field(() => [Race], { nullable: true })
   Races: Race[];
-}
-
-@ObjectType()
-export class Location {
-  @Field()
-  lat: string;
-
-  @Field()
-  long: string;
-
-  @Field()
-  locality: string;
-
-  @Field()
-  country: string;
-}
-
-@ObjectType()
-export class Circuit {
-  @Field()
-  circuitId: string;
-
-  @Field()
-  url: string;
-
-  @Field()
-  circuitName: string;
-
-  @Field(() => Location)
-  location: Location;
 }
 
 @ObjectType()
