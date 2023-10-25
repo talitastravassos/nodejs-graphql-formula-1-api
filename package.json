@@ -23,7 +23,7 @@
     "@types": "src/types"
   },
   "devDependencies": {
-    "@types/express": "^4.17.19",
+    "@types/express": "^4.17.20",
     "@types/jest": "^29.5.5",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "apollo-server-express": "^3.12.1",
