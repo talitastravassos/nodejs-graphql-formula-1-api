@@ -28,7 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "apollo-server-express": "^3.12.1",
     "apollo-server-testing": "^2.25.3",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard-with-typescript": "^37.0.0",
     "eslint-plugin-import": "^2.29.0",
