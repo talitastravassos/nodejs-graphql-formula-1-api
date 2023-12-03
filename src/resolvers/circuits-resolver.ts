@@ -7,7 +7,7 @@ export class CircuitsResolver {
   @Query(() => Circuits, { nullable: true })
   async circuits(
     @Arg('year', { nullable: true }) year?: string,
-    @Arg('circuitId', { nullable: true }) circuitId?: string
+    @Arg('circuitId', { nullable: true }) circuitId?: string,
   ) {
     const circuits = await getCircuits(year, circuitId);
 
