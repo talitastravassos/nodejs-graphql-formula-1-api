@@ -4,13 +4,13 @@ const URL_BASE = 'https://ergast.com/api/f1';
 
 const getCircuits = async (
   year?: string,
-  circuitId?: string
+  circuitId?: string,
 ): Promise<Circuits> => {
   const url = year
     ? `${URL_BASE}/${year}/circuits.json`
     : circuitId
-    ? `${URL_BASE}/circuits/${circuitId}.json`
-    : `${URL_BASE}/circuits.json`;
+      ? `${URL_BASE}/circuits/${circuitId}.json`
+      : `${URL_BASE}/circuits.json`;
 
   const response = await fetch(url).then(async (response) => {
     if (response.status !== 200) return undefined;

@@ -7,7 +7,7 @@ export class DriversResolver {
   @Query(() => [Driver])
   async drivers(
     @Arg('year', { nullable: true }) year?: string,
-    @Arg('driverId', { nullable: true }) driverId?: string
+    @Arg('driverId', { nullable: true }) driverId?: string,
   ) {
     const drivers = await getDrivers(year, driverId);
     return drivers;
