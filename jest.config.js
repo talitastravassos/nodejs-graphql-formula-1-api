@@ -15,5 +15,7 @@ module.exports = {
     '!**/coverage/**',
     '!**/__mocks__/**',
     '!**.mocks.ts',
+    '!index.ts',
+    '!server.ts',
   ],
 };
