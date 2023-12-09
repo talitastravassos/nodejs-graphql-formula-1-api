@@ -15,7 +15,7 @@ let Circuits = class Circuits {
 };
 exports.Circuits = Circuits;
 __decorate([
-    (0, type_graphql_1.Field)(),
+    (0, type_graphql_1.Field)({ nullable: true }),
     __metadata("design:type", String)
 ], Circuits.prototype, "season", void 0);
 __decorate([

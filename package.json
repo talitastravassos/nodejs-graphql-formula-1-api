@@ -18,10 +18,10 @@
     "lint": "eslint --fix"
   },
   "_moduleAliases": {
-    "@services": "src/services",
-    "@models": "src/models",
-    "@resolvers": "src/resolvers",
-    "@types": "src/types"
+    "@services": "dist/services",
+    "@models": "dist/models",
+    "@resolvers": "dist/resolvers",
+    "@types": "dist/types"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
