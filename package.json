@@ -14,7 +14,8 @@
     "ts.check": "tsc --project tsconfig.json",
     "start": "node dist/server.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --no-notify src/server.ts",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "lint": "eslint --fix"
   },
   "_moduleAliases": {
     "@services": "src/services",
