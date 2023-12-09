@@ -17,13 +17,9 @@ const getResults = async (
 
     return await response.json();
   });
-  console.log(
-    '🚀 ~ file: results.service.ts:20 ~ response ~ response:',
-    response,
-  );
 
   if (!response) {
-    return null;
+    return undefined;
   }
 
   return response.MRData.RaceTable;

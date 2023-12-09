@@ -4,7 +4,7 @@ import { Arg, Query, Resolver } from 'type-graphql';
 
 @Resolver()
 export class ResultsResolver {
-  @Query(() => Results)
+  @Query(() => Results, { nullable: true })
   async results(
     @Arg('year', { nullable: true }) year?: string,
     @Arg('roundId', { nullable: true }) roundId?: string,

@@ -53,7 +53,7 @@ type Query {
   circuits(circuitId: String, year: String): Circuits
   drivers(driverId: String, year: String): [Driver!]!
   raceSchedules(year: String): RaceSchedules
-  results(roundId: String, year: String): Results!
+  results(roundId: String, year: String): Results
   seasons: [Season!]!
 }
 
