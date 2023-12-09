@@ -8,6 +8,7 @@ module.exports = {
   }),
   preset: 'ts-jest',
   testEnvironment: 'node',
+  modulePathIgnorePatterns: ['<rootDir>/dist/'],
   collectCoverageFrom: [
     '**/*.ts',
     '!**/node_modules/**',
