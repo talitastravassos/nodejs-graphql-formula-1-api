@@ -1,16 +1,16 @@
 export interface Circuits {
   season: string;
-  Circuits: ICircuit[];
+  Circuits: Circuit[];
 }
 
-export interface ICircuit {
+export interface Circuit {
   circuitId: string;
   url: string;
   circuitName: string;
   location: Location | null;
 }
 
-export interface ILocation {
+export interface Location {
   lat: string;
   long: string;
   locality: string;

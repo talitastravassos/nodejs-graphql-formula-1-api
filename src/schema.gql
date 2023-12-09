@@ -15,6 +15,13 @@ type Circuits {
   season: String
 }
 
+type Constructor {
+  constructorId: String!
+  name: String!
+  nationality: String!
+  url: String!
+}
+
 type Driver {
   code: String
   dateOfBirth: String!
@@ -24,6 +31,10 @@ type Driver {
   nationality: String!
   permanentNumber: String
   url: String!
+}
+
+type FastestLap {
+  time: String
 }
 
 type FirstPractice {
@@ -42,6 +53,7 @@ type Query {
   circuits(circuitId: String, year: String): Circuits
   drivers(driverId: String, year: String): [Driver!]!
   raceSchedules(year: String): RaceSchedules
+  results(roundId: String, year: String): Results!
   seasons: [Season!]!
 }
 
@@ -60,8 +72,44 @@ type Race {
   url: String!
 }
 
+type RaceResult {
+  Results: [Result!]
+  circuit: Circuit
+  date: String!
+  raceName: String!
+  round: String!
+  season: String!
+  time: String!
+  url: String!
+}
+
 type RaceSchedules {
   Races: [Race!]
+  season: String!
+}
+
+type Result {
+  Constructor: Constructor!
+  Driver: Driver!
+  FastestLap: FastestLap
+  Time: ResultTime
+  grid: String!
+  laps: String!
+  number: String!
+  points: String!
+  position: String!
+  positionText: String!
+  status: String!
+}
+
+type ResultTime {
+  millis: String!
+  time: String!
+}
+
+type Results {
+  Races: [RaceResult!]
+  round: String
   season: String!
 }
 
